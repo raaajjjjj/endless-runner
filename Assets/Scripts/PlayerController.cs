@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float forwardSpeed = 10f;
@@ -20,5 +20,11 @@ public class PlayerController : MonoBehaviour
         pos.x = Mathf.MoveTowards(pos.x, targetX, laneChangeSpeed * Time.deltaTime);
         pos.z += forwardSpeed * Time.deltaTime;
         transform.position = pos;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log($"Trigger with: {other.name}");
+        if (other.GetComponent<Obstacle>() != null)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
