@@ -86,7 +86,7 @@ Exposed in the Inspector on the relevant components.
 - [x] Endless floor
 - [x] Jump
 - [x] Distance score and best score
-- [ ] Slide and overhead barriers
+- [x] Slide and overhead barriers
 - [ ] Unity ML-Agents agent with discrete actions (lane, jump, slide) and a survival reward
 - [ ] Evaluation: untrained agent vs trained agent vs human best score
 - [ ] Trained model exported to ONNX and run as inference in the game
