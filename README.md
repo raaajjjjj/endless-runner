@@ -26,6 +26,7 @@ This is the foundation for a reinforcement learning project: a Unity ML-Agents a
 | --- | --- |
 | Move left / right | `A` / `D` or Left / Right arrows |
 | Jump | `Space`, `W` or Up arrow |
+| Slide | `S` or Down arrow
 
 ## Getting started
 
